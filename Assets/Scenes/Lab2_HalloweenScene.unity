@@ -746,6 +746,7 @@ GameObject:
   - component: {fileID: 856260969}
   - component: {fileID: 856260968}
   - component: {fileID: 856260967}
+  - component: {fileID: 856260972}
   - component: {fileID: 856260971}
   m_Layer: 0
   m_Name: TriggerGateOpening
@@ -841,6 +842,20 @@ Transform:
   m_Father: {fileID: 1957137222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &856260971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856260965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2144857611c0c9648bdc4a017f7cb18b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGate: {fileID: 8433955526713224427}
+  GateTrigger: 1
+--- !u!114 &856260972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3306,7 +3321,7 @@ GameObject:
   - component: {fileID: 1775821275}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3640,7 +3655,7 @@ Transform:
   m_GameObject: {fileID: 1895191636}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: -5}
+  m_LocalPosition: {x: -1, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4167,6 +4182,7 @@ GameObject:
   - component: {fileID: 6137168241973435785}
   - component: {fileID: 6320779926322533730}
   - component: {fileID: 8433955526713224426}
+  - component: {fileID: 8433955526713224427}
   m_Layer: 0
   m_Name: gate-graveyard-door-r
   m_TagString: Untagged
@@ -4966,7 +4982,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905308626965914040}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.5586405, y: 0.68109876, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5272,6 +5288,27 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8718099643969501646, guid: eab25d0fbde50624694d6a47f3a5dbe7, type: 3}
+--- !u!95 &8433955526713224427
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905308626965914040}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ae1714d52d7a5442b668b4d57428e24, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &8617459815374226619
 Transform:
   m_ObjectHideFlags: 0
@@ -5362,7 +5399,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 7c738e6116f21cb4eb0854123cd664dc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
