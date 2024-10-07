@@ -3738,7 +3738,6 @@ GameObject:
   - component: {fileID: 856260969}
   - component: {fileID: 856260968}
   - component: {fileID: 856260967}
-  - component: {fileID: 856260972}
   - component: {fileID: 856260971}
   m_Layer: 0
   m_Name: TriggerGateOpening
@@ -3842,24 +3841,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 856260965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2144857611c0c9648bdc4a017f7cb18b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myGate: {fileID: 8433955526713224427}
-  GateTrigger: 1
---- !u!114 &856260972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856260965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 309ca97a7d5f932418859616dd9d854d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myGate: {fileID: 8834555816431393529}
+  myGate_L: {fileID: 8834555816431393529}
+  myGate_R: {fileID: 8433955526713224427}
   GateTrigger: 1
 --- !u!1001 &876150013
 PrefabInstance:
