@@ -49,6 +49,11 @@ public class PumpkinManager : MonoBehaviour
             }
 
             lastPosition = currentPosition;  // Update the last known position
+            if (lastPosition.y < -1)
+            {
+                DestroyPumpkin();
+                SpawnPumpkin();
+            }
         }
     }
 
@@ -75,7 +80,7 @@ public class PumpkinManager : MonoBehaviour
     {
         pumpkinHitCount++;  // Increment the hit count
 
-        if (pumpkinHitCount >= 3)
+        if (pumpkinHitCount == 5)
         {
             ToggleNewObject();  // Activate or toggle the new object after 3 hits
         }
