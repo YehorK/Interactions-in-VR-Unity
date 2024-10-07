@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Lab2_HalloweenScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 66b475589a0e2cd42b280a1725710883, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6eced0542a2d11d48a72c56ce026e4ef, type: 2}
