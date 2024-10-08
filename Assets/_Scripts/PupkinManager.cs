@@ -40,7 +40,7 @@ public class PumpkinManager : MonoBehaviour
                     stillTimer = 0f;  // Reset the timer if the pumpkin moves
                 }
 
-                // If the pumpkin hasn't moved for 5 seconds, destroy it and spawn a new one
+                // If the pumpkin hasn't moved for 5 seconds, destroy and spawn a new one
                 if (stillTimer >= 5f)
                 {
                     DestroyPumpkin();
@@ -66,7 +66,7 @@ public class PumpkinManager : MonoBehaviour
         hasMoved = false;  // Reset the moved flag
     }
 
-    // Method to destroy the current pumpkin
+    // Destroy the current pumpkin
     private void DestroyPumpkin()
     {
         if (currentPumpkin != null)
@@ -75,12 +75,12 @@ public class PumpkinManager : MonoBehaviour
         }
     }
 
-    // Method to increment the hit count when a pumpkin hits the cauldron
+    // Increment the hit count when a pumpkin hits the cauldron
     public void OnPumpkinHitCauldron()
     {
         pumpkinHitCount++;  // Increment the hit count
 
-        if (pumpkinHitCount == 5)
+        if (pumpkinHitCount == 5) // == instead of >= so that the toggle function is used only once
         {
             ToggleNewObject();  // Activate or toggle the new object after 3 hits
         }
@@ -89,6 +89,6 @@ public class PumpkinManager : MonoBehaviour
     // Method to toggle the active status of the new object
     private void ToggleNewObject()
     {
-        newObject.SetActive(!newObject.activeSelf);  // Toggle active status of the new object
+        newObject.SetActive(!newObject.activeSelf);  // Toggle active status of the new object (the lit cauldron)
     }
 }

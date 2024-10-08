@@ -11,7 +11,7 @@ public class PumpkinToThrow : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) // Detecting collision
     {
-        if (other.CompareTag("Cauldron"))  // Ensure that the cauldron has the "Cauldron" tag
+        if (other.CompareTag("Cauldron"))  // The cauldron must have the "Cauldron" tag
         {
             pumpkinManager.OnPumpkinHitCauldron();  // Notify the manager when a pumpkin hits the cauldron
         }

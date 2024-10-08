@@ -11,13 +11,14 @@ public class TriggerGateController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !isOpen)
+        if (other.CompareTag("Player") && !isOpen) //comparing the Tag for Player, and checking that animation hasn't been played yet
         {
             OpenGates();
         }
     }
 
-    private void OpenGates()
+    
+    private void OpenGates() //function for playing animation
     {
         if (GateTrigger)
         {
