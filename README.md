@@ -13,7 +13,9 @@ The goal of this project was to implement several interactive elements within VR
 
 If you'd like to try it out - just clone the repository and it should be good to go (make sure to check that the platform is switched to Android). The application testing was limited to Meta Quest 2.
 
-## Video Demo
+This implementation can serve as basis for a VR quest / puzzle game (or like an espace room) with the Halloween theme.
+
+ ## Video Demo
 The video demonstrates all of the created elements in the project: https://youtu.be/S62Rw_BuyLM
 
 [![Lab 1 Video Demo](https://img.youtube.com/vi/S62Rw_BuyLM/0.jpg)](https://youtu.be/S62Rw_BuyLM)
