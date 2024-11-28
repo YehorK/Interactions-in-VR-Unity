@@ -1,8 +1,8 @@
-# Lab2 Assignment
+# Exploring interactions in Virtual Reality
 This project is done as part of the Lab 2 assignment for IMTC 505 course.
 Unity 2022.3.46f1 is used.
 
-The scene is constructed with the Halloween theme, using thwe following assets pack: 
+The scene is constructed with the Halloween theme, using the following assets pack: 
 
 https://assetstore.unity.com/packages/3d/props/poly-halloween-236625
 
